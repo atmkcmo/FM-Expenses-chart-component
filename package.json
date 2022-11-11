@@ -1,0 +1,22 @@
+{
+  "name": "expenses-chart-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)",
+  "source": "src/index.html",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "parcel"
+  },
+  "targets": {
+    "default": {
+      "distDir": "./docs"
+    }
+  },
+  
+
+  
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  }
+}

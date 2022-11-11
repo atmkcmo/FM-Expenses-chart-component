@@ -1,0 +1,135 @@
+:root {
+  --darkbrown: hsl(25, 47%, 15%);
+  --mediumbrown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --verypaleorange: hsl(33, 100%, 98%);
+  --softred: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --spacing: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  background-color: var(--cream);
+  font-weight: 400;
+  color: var(--darkbrown);
+}
+
+/* utilites */
+.flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-brown {
+  color: var(--mediumbrown);
+}
+
+.font-sm {
+  font-size: 80%;
+}
+
+.font-lg {
+  font-size: 130%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px;
+  min-width: 350px;
+  margin-bottom: var(--spacing);
+}
+
+.card-total {
+  font-size: 200%;
+}
+
+.card--softred {
+  background-color: var(--softred);
+  color: white;
+}
+
+.card-chart {
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--spacing) * 2.5) 0;
+  border-bottom: 2px solid var(--cream);
+}
+
+.chart-bar {
+  border-radius: 3px;
+  background-color: var(--softred);
+  width: 12%;
+  height: auto;
+  align-self: flex-end;
+  position: relative;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.chart-bar--active {
+  background-color: var(--cyan);
+}
+.chart-bar:hover {
+  opacity: .7;
+}
+
+
+.chart-name {
+  text-align: center;
+  font-size: 80%;
+  color: var(--mediumbrown);
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chart-tooltip {
+  background: black;
+  padding: 4px 2px;
+  border-radius: 4px;
+  color: white;
+  font-size: 65%;
+  text-align: center;
+  position: relative;
+  top: -20px;
+  width: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  opacity: 0;
+  transition: .6s;
+}
+
+.chart-tooltip--visable {
+  display: block;
+
+}
+.chart-tooltip--open {
+  opacity: 1;
+  margin-top: -10px;
+}
