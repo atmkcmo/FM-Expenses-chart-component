@@ -90,13 +90,14 @@ main {
   cursor: pointer;
   transition: 0.6s;
 }
+
 .chart-bar--active {
   background-color: var(--cyan);
 }
+
 .chart-bar:hover {
   opacity: .7;
 }
-
 
 .chart-name {
   text-align: center;

@@ -1,5 +1,3 @@
-console.log('Hello world!');
-
 const chartData = [
 	{ day: "mon", amount: 17.45 },
 	{ day: "tue", amount: 34.91 },
@@ -48,7 +46,7 @@ chartData.forEach(function (set, i) {
 		a.classList.add("chart-tooltip--visable");
         setTimeout( function(){
             a.classList.add("chart-tooltip--open");
-        }, 20)
+        }, 20);
 	});
 
 	barChart.addEventListener("mouseout", function handleMouseOver(e) {
@@ -56,7 +54,7 @@ chartData.forEach(function (set, i) {
         a.classList.remove("chart-tooltip--visable");
         setTimeout( function(){
             a.classList.remove("chart-tooltip--open");
-        }, 20)
+        }, 20);
 	});
 
 });
